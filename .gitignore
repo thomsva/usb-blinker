@@ -1,0 +1,43 @@
+# User-specific project settings (window positions, last opened files, etc.)
+*.kicad_prl
+
+# Backup files
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*.bak
+
+# Auto-save files
+_autosave-*
+*.tmp
+
+# KiCad lock files
+*.lck
+
+# Recreatable cache
+fp-info-cache
+
+# KiCad v5 legacy files (safe to ignore if you ever opened old projects)
+
+*-cache.lib
+*-rescue.lib
+*-rescue.dcm
+*.dcm-bak
+
+# Generated manufacturing / plot outputs
+
+gerber/
+gerbers/
+*.zip
+
+# Editors / OS junk
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
