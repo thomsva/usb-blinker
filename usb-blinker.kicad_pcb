@@ -34,6 +34,45 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
@@ -100,9 +139,9 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at 0 -1.05 0)
+			(at 1.8 -0.1 0)
 			(layer "F.SilkS")
-			(uuid "6ab8181a-3c97-4675-9235-008dda256068")
+			(uuid "ebbef965-70c2-494d-96e8-19ae31ac1525")
 			(effects
 				(font
 					(size 1 1)
@@ -113,7 +152,7 @@
 		(property "Value" "1u"
 			(at 0 1.05 0)
 			(layer "F.Fab")
-			(uuid "320aa593-04ad-4e87-a1c0-5cb59aa33654")
+			(uuid "b58ee49d-e147-494f-b23f-aa04d86012bf")
 			(effects
 				(font
 					(size 1 1)
@@ -125,7 +164,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "224e338f-3bb5-4a26-a397-3381e063dfc5")
+			(uuid "3a490f9d-00bd-47ec-a6d9-810e0335c112")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -137,7 +176,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6cf9f7cf-9aff-4d05-9736-a98deb3dfd9c")
+			(uuid "fe76a99d-167e-45f4-9b80-9895e33505a4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -628,7 +667,7 @@
 		(descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 -1.05 0)
+			(at -1.5 0.2 0)
 			(layer "F.SilkS")
 			(uuid "990f9f26-faa0-42d6-927f-cd94d6378e99")
 			(effects
@@ -763,7 +802,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D1"
-			(at 0 -1.43 90)
+			(at 2.2875 0 90)
 			(layer "F.SilkS")
 			(uuid "0d43cf5e-d4ad-4075-baf8-61fdc5047cae")
 			(effects
@@ -981,7 +1020,7 @@
 		(descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 -1.05 0)
+			(at -1.5 0 0)
 			(layer "F.SilkS")
 			(uuid "c976e366-3772-4158-9114-c33b34163794")
 			(effects
@@ -1116,7 +1155,7 @@
 		(descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R5"
-			(at 0 -1.05 0)
+			(at -1.8 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "74c20a8d-3699-432d-bfdc-18cf7d53bd2c")
 			(effects
@@ -1251,7 +1290,7 @@
 		(descr "TSSOP, 14 Pin (JEDEC MO-153 variation AB-1, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSSOP SO")
 		(property "Reference" "U1"
-			(at 0 -3.45 90)
+			(at 1.3375 -3.45 90)
 			(layer "F.SilkS")
 			(uuid "a81b077d-a81b-4ad6-9946-90edc86b96bc")
 			(effects
@@ -1728,7 +1767,7 @@
 		(descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R4"
-			(at 0 -1.05 0)
+			(at -1.8 0.1 0)
 			(layer "F.SilkS")
 			(uuid "edffbc18-29f3-42c8-84d6-4ce908a3d71b")
 			(effects
@@ -1863,7 +1902,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at 0 -1.05 0)
+			(at 0 2 0)
 			(layer "F.SilkS")
 			(uuid "ea7b8a13-8840-4a66-9a3d-72afea401ca9")
 			(effects
@@ -1998,7 +2037,7 @@
 		(descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R3"
-			(at 0 -1.05 0)
+			(at 1.7 -0.3 0)
 			(layer "F.SilkS")
 			(uuid "bb3069f7-6a00-4e4b-80d3-2ee5d3932191")
 			(effects
@@ -2192,6 +2231,14 @@
 		(uuid "566ac706-ba95-43ac-b390-704241f10aeb")
 	)
 	(segment
+		(start 141.98 96.4)
+		(end 141.98 95.52)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "5bf4294f-cb1d-4159-a50a-3775b4cace6f")
+	)
+	(segment
 		(start 139.99 90.5)
 		(end 140.03 90.46)
 		(width 0.2)
@@ -2208,14 +2255,6 @@
 		(uuid "7322a460-cd2a-4893-84f9-14c10f16c7ee")
 	)
 	(segment
-		(start 141.98 96.4)
-		(end 141 96.4)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "a3f8a004-8083-4323-be3d-6c6e4b68c756")
-	)
-	(segment
 		(start 144.9 95.2)
 		(end 143.199 96.901)
 		(width 0.2)
@@ -2230,6 +2269,14 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "c157ece6-4d2d-40d9-ab95-3c1fc16d6274")
+	)
+	(segment
+		(start 141.98 95.52)
+		(end 142 95.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "c7c6c855-4b0a-4009-a9f9-247541051e76")
 	)
 	(segment
 		(start 132 88)
@@ -2325,7 +2372,7 @@
 		(uuid "b7a3afb0-b0cd-4615-ae6f-c23a2cf5e20b")
 	)
 	(via
-		(at 141 96.4)
+		(at 142 95.5)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -2589,14 +2636,6 @@
 		(layer "F.Cu")
 		(net 15)
 		(uuid "3dd2eca5-8edf-44b8-bc44-06da8b967213")
-	)
-	(segment
-		(start 142.47 92.65)
-		(end 142.52 92.7)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 15)
-		(uuid "4706c352-1443-4d97-89f7-7d5b8cb498db")
 	)
 	(segment
 		(start 136.34 89.48)
