@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "2479fa30-b975-451a-9e65-31b8e812188e")
 	(paper "A4")
+	(title_block
+		(title "USB-BLINKER")
+		(date "2026-03-06")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_PowerOnly_6P"
 			(pin_names
@@ -575,6 +579,142 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -1895,6 +2035,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 59.69) (xy 59.69 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c791c01-4caf-4c2e-92b2-89ac5ff6ad6c")
+	)
+	(wire
+		(pts
 			(xy 46.99 59.69) (xy 54.61 59.69)
 		)
 		(stroke
@@ -1975,7 +2125,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 53.34) (xy 74.93 53.34)
+			(xy 59.69 59.69) (xy 63.5 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2075,7 +2225,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 45.72) (xy 74.93 53.34)
+			(xy 74.93 45.72) (xy 74.93 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2273,6 +2423,16 @@
 		)
 		(uuid "f04f5e43-20f4-4a65-b847-5e9deb3b2f3d")
 	)
+	(wire
+		(pts
+			(xy 71.12 59.69) (xy 74.93 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff45397d-d1d1-45ad-829b-733e15a2e2e2")
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 54.61 63.5 0)
@@ -2301,7 +2461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 52.832 63.5 90)
 			(effects
 				(font
@@ -2371,7 +2531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 101.2952 109.22 0)
 			(effects
 				(font
@@ -2877,7 +3037,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 98.552 85.09 90)
 			(effects
 				(font
@@ -2947,7 +3107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 117.8052 76.2 0)
 			(effects
 				(font
@@ -3017,7 +3177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 42.672 63.5 90)
 			(effects
 				(font
@@ -3285,7 +3445,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.162 80.01 90)
 			(effects
 				(font
@@ -3487,7 +3647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 98.552 95.25 90)
 			(effects
 				(font
@@ -3623,7 +3783,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 138.7348 68.58 0)
 			(effects
 				(font
@@ -4063,6 +4223,74 @@
 			(project ""
 				(path "/2479fa30-b975-451a-9e65-31b8e812188e"
 					(reference "#GND05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 67.31 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2b709c2-48af-4574-8c8a-16f3b8fdec60")
+		(property "Reference" "F1"
+			(at 67.31 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500mA"
+			(at 67.31 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
+			(at 67.31 61.468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 67.31 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9fafd3fd-86a6-447b-b2e4-be979b602193")
+		)
+		(pin "1"
+			(uuid "13dc2602-5a9d-40a0-9c8c-f23920ba665c")
+		)
+		(instances
+			(project ""
+				(path "/2479fa30-b975-451a-9e65-31b8e812188e"
+					(reference "F1")
 					(unit 1)
 				)
 			)
