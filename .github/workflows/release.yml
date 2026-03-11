@@ -1,0 +1,36 @@
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/kicad/kicad:9.0
+      options: --user root
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Export Gerbers
+        run: |
+          mkdir gerbers
+          kicad-cli pcb export gerbers *.kicad_pcb -o gerbers
+          kicad-cli pcb export drill *.kicad_pcb -o gerbers
+
+      - name: Create versioned zip
+        run: |
+          PROJECT="${{ github.event.repository.name }}"
+          VERSION="${{ github.event.release.tag_name }}"
+          ZIP_NAME="${PROJECT}-${VERSION}-gerbers.zip"
+
+          zip -r "$ZIP_NAME" gerbers
+          echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
+
+      - name: Attach to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP_NAME }}
