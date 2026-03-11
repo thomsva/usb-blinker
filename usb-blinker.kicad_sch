@@ -2443,16 +2443,6 @@
 		)
 		(uuid "3ccff10b-5614-46c1-93fe-3df9404f8c95")
 	)
-	(label "VBUS"
-		(at 86.36 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3f4555d4-b5d4-4034-b3c9-cfedb8004fdf")
-	)
 	(global_label "VBUS"
 		(shape input)
 		(at 81.28 68.58 0)
