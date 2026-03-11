@@ -1,12 +1,14 @@
-# DIP-8 Adapter
+# DIP-8 Adapter practice project
 [![ERC](https://github.com/thomsva/usb-blinker/actions/workflows/erc.yml/badge.svg)](https://github.com/thomsva/usb-blinker/actions/workflows/erc.yml) [![DRC](https://github.com/thomsva/usb-blinker/actions/workflows/drc.yml/badge.svg)](https://github.com/thomsva/usb-blinker/actions/workflows/drc.yml)
-Description
+
+Blinks a led using power from USB-C cable.
 
 <img src="assets/pcb_iso_3d.png" alt="3D PCB" height="450"/>
 
 ## Features
 
-- List of features
+- Takes 5V from USB port by connecting CC1 and CC2 to ground trough 5.1k resistors. 
+- Led powered direcly from TLC555 power
 
 ## License
 
