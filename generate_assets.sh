@@ -34,7 +34,7 @@ $KICAD_CLI pcb render *.kicad_pcb \
     --zoom 0.90 \
     --rotate 325,0,45 \
     --perspective \
-    --preset follow_pcb_editor \
+    --quality user
 
 # SVG export
 $KICAD_CLI pcb export svg *.kicad_pcb \
