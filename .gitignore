@@ -8,11 +8,15 @@
 *.bak
 
 # Auto-save files
+*auto_saved_files#
 _autosave-*
 *.tmp
 
 # KiCad lock files
 *.lck
+
+# KiCad ERC and DRC reports
+*.rpt
 
 # Recreatable cache
 fp-info-cache
@@ -40,4 +44,4 @@ Thumbs.db
 
 *.swp
 *.swo
-*~
+*~      
