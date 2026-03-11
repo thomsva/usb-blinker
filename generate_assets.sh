@@ -27,10 +27,11 @@ $KICAD_CLI pcb render *.kicad_pcb \
     --side bottom
 
 # Isometric full 3D with components
+# Adjust zoom and rotation as needed
 $KICAD_CLI pcb render *.kicad_pcb \
     --output assets/pcb_iso_3d.png \
     --width 1920 --height 1920 \
-    --zoom 0.65 \
+    --zoom 0.90 \
     --rotate 325,0,45 \
     --perspective \
     --preset follow_pcb_editor \
