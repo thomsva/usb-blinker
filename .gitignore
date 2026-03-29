@@ -18,6 +18,9 @@ _autosave-*
 # KiCad ERC and DRC reports
 *.rpt
 
+# KiCad History folder
+.history
+
 # Recreatable cache
 fp-info-cache
 
