@@ -1,4 +1,4 @@
-# DIP-8 Adapter practice project
+# USB powered blinking led - practice project
 [![ERC](https://github.com/thomsva/usb-blinker/actions/workflows/erc.yml/badge.svg)](https://github.com/thomsva/usb-blinker/actions/workflows/erc.yml) [![DRC](https://github.com/thomsva/usb-blinker/actions/workflows/drc.yml/badge.svg)](https://github.com/thomsva/usb-blinker/actions/workflows/drc.yml)
 
 Blinks a led using power from USB-C cable.
